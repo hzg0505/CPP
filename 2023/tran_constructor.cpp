@@ -53,9 +53,9 @@ int main(int argc, char const *argv[])
     // Test t2(30);
 
     Test t3 = 50;   // 等价于 Test t3(50);  = 不是运算符，表示初始化
-    // t3 = 60;        // = 为运算符，赋值
+    t3 = 60;        // = 为运算符，赋值
 
-    // Test t4(70);
-    // t3 = t4;
+    Test t4(70);
+    t3 = t4;
 }
 
